@@ -1,0 +1,19 @@
+{
+  "name": "bibtex-root",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "bun --cwd=packages/stringify run build",
+    "build:all": "bun --filter=\"*\" run build",
+    "publish:stringify": "cd packages/stringify && npm publish --access public"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
