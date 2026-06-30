@@ -1,8 +1,8 @@
-import { BibTeXEntry, StringifierConfig, MalformedBibTeXError } from "./types";
-import { escapeValue } from "./utils/escaping";
-import { shouldProtectCasing, protectCasing } from "./utils/casing";
-import { processPages } from "./utils/pages";
-import { validateBraces, recoverBraces } from "./utils/braces";
+import { BibTeXEntry, StringifierConfig, MalformedBibTeXError } from "./types.js";
+import { escapeValue } from "./utils/escaping.js";
+import { shouldProtectCasing, protectCasing } from "./utils/casing.js";
+import { processPages } from "./utils/pages.js";
+import { validateBraces, recoverBraces } from "./utils/braces.js";
 
 const VERBATIM_FIELDS = new Set(["url", "doi", "eprint", "file"]);
 const VALID_MONTHS = new Set(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"]);

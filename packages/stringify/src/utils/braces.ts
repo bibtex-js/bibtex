@@ -1,4 +1,4 @@
-import { MalformedBibTeXError } from "../types";
+import { MalformedBibTeXError } from "../types.js";
 
 export function validateBraces(value: string, fieldName: string, entryKey: string): void {
     let depth = 0;
