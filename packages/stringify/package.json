@@ -1,31 +1,41 @@
 {
-  "name": "@bibtex/stringify",
-  "description": "A lightweight, fast, and robust utility to stringify JavaScript objects into BibTeX format.",
-  "version": "0.3.0",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bibtex-js/bibtex.git"
-  },
-  "homepage": "https://github.com/bibtex-js/bibtex/tree/main/packages/stringify",
-  "author": "Martin Winkler",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist",
-    "src"
-  ],
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "test": "bun test"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "devDependencies": {
-    "@citation-js/core": "^0.7.21",
-    "@citation-js/plugin-bibtex": "^0.7.21",
-    "bibtex-parse-js": "^0.0.24",
-    "fast-check": "^4.8.0"
-  }
+    "name": "@bibtex/stringify",
+    "description": "A lightweight, fast, and robust utility to stringify JavaScript objects into BibTeX format.",
+    "version": "0.3.0",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/bibtex-js/bibtex.git"
+    },
+    "homepage": "https://github.com/bibtex-js/bibtex/tree/main/packages/stringify",
+    "keywords": [
+        "bibtex",
+        "stringify",
+        "serialize",
+        "serializer",
+        "bibliography",
+        "bib",
+        "latex",
+        "citation"
+    ],
+    "author": "Martin Winkler",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist",
+        "src"
+    ],
+    "type": "module",
+    "scripts": {
+        "build": "tsc",
+        "test": "bun test"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "devDependencies": {
+        "@citation-js/core": "^0.7.21",
+        "@citation-js/plugin-bibtex": "^0.7.21",
+        "bibtex-parse-js": "^0.0.24",
+        "fast-check": "^4.8.0"
+    }
 }
