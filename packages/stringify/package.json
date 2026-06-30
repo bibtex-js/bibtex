@@ -1,12 +1,16 @@
 {
     "name": "@bibtex/stringify",
-    "description": "A lightweight, fast, and robust utility to stringify JavaScript objects into BibTeX format.",
     "version": "0.3.0",
+    "description": "A lightweight, fast, and robust utility to stringify JavaScript objects into BibTeX format.",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/bibtex-js/bibtex.git"
     },
-    "homepage": "https://github.com/bibtex-js/bibtex/tree/main/packages/stringify",
+    "bug": {
+        "url": "https://github.com/bibtex-js/bibtex/issues"
+    },
+    "homepage": "https://github.com/bibtex-js/bibtex/tree/main/packages/stringify#readme",
+    "author": "Martin Winkler",
     "keywords": [
         "bibtex",
         "stringify",
@@ -17,7 +21,6 @@
         "latex",
         "citation"
     ],
-    "author": "Martin Winkler",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
     "files": [
@@ -25,13 +28,22 @@
         "src"
     ],
     "type": "module",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js"
+        }
+    },
     "scripts": {
         "build": "tsc",
+        "prepublishOnly": "bun run build",
         "test": "bun test"
     },
     "publishConfig": {
         "access": "public"
     },
+    "dependencies": {},
+    "peerDependencies": {},
     "devDependencies": {
         "@citation-js/core": "^0.7.21",
         "@citation-js/plugin-bibtex": "^0.7.21",

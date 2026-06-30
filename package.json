@@ -1,19 +1,28 @@
 {
   "name": "bibtex-root",
+  "description": "BibTeX monorepo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bibtex-js/bibtex.git"
+  },
+  "homepage": "https://github.com/bibtex-js/bibtex#readme",
+  "author": "Martin Winkler",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "engines": {
-    "node": ">=18.0.0"
+    "node": ">=18.0.0",
+    "bun": ">=1.0.0"
   },
   "scripts": {
-    "build": "bun --cwd=packages/stringify run build",
     "build:all": "bun --filter=\"*\" run build",
-    "publish:stringify": "cd packages/stringify && npm publish --access public"
+    "publish:stringify": "bun --filter stringify exec bun x npm publish",
+    "test": "bun --filter \"*\" test"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
-    "@types/bun": "^1.3.14"
+    "@types/bun": "^1.3.14",
+    "@types/node": "^20.0.0"
   }
 }

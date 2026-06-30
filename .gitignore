@@ -1,16 +1,40 @@
-# Build and Dependencies
+# Dependencies
 node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+#bun.lock - using bun
+npm-debug.log*
+yarn-error.log*
+
+# Build
 dist/
 build/
+*.tsbuildinfo
 
-# Environment and Temp
+# Environment
 .env
-*.log
-.DS_Store
-docs/
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Temporary
 temp/
+*.temp
 scratch/
-scratchpad/
+*.scratch
+
+# Editor / OS
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
 
 # Tests - for now
 tests/
