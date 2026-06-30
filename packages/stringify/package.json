@@ -1,6 +1,6 @@
 {
   "name": "@bibtex/stringify",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -8,9 +8,16 @@
     "src"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "bun test"
   },
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "@citation-js/core": "^0.7.21",
+    "@citation-js/plugin-bibtex": "^0.7.21",
+    "bibtex-parse-js": "^0.0.24",
+    "fast-check": "^4.8.0"
   }
 }

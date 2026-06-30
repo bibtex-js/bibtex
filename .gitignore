@@ -1,5 +1,16 @@
+# Build and Dependencies
 node_modules/
 dist/
+build/
+
+# Environment and Temp
 .env
 *.log
 .DS_Store
+docs/
+temp/
+scratch/
+scratchpad/
+
+# Tests - for now
+tests/
